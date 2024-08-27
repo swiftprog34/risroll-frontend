@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="text-3xl">
+    <h1 class="text-5xl font-semibold text-chat-1 bg-gradient-to-br from-gradient-pink to-gradient-purple">
         Hello world!
     </h1>
 </body>
