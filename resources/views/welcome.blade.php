@@ -29,14 +29,32 @@
         <button class="mr-12 rounded-lg shadow-button-shadow px-6 py-1 bg-gradient-to-br from-gradient-pink to bg-gradient-purple text-white">
             Войти
         </button>
-        <svg class = "drop-shadow-drop-text-shadow" width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="42" height="3" rx="1.5" fill="black"/>
-            <rect y="12" width="35" height="3" rx="1.5" fill="black"/>
-            <rect y="24" width="42" height="3" rx="1.5" fill="black"/>
-        </svg>
+        <nav class="flex justify-between items-center p-4">
+            <div class="drop-shadow-drop-text-shadow cursor-pointer">
+                <svg  width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="3" rx="1.5" fill="black"/>
+                    <rect y="12" width="35" height="3" rx="1.5" fill="black"/>
+                    <rect y="24" width="42" height="3" rx="1.5" fill="black"/>
+                </svg>
+            </div>
+            <div id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 h-full overflow-x-hidden duration-500 z-10">
+                <!--navigation menu box-->
+                <div id="sideNav" class="fixed top-0 right-0 bg-gradient-to-r from-pink-600 to-purple-600 text-black w-0 h-full flex justify-center items-center overflow-x-hidden duration-500 font-bold z-50">
+                    <!--exit icon, it will close navbar when clicked-->
+                    <a href="javascript:void(0)" class="text-3xl absolute top-0 right-0 mr-3 mt-2">&times;</a>
+                    <ul class="text-2xl sm:text-3xl">
+                        <li class="p-2"><a href="#">Films</a></li>
+                        <li class="p-2"><a href="#">Docus</a></li>
+                        <li class="p-2"><a href="#">Notes</a></li>
+                        <li class="p-2"><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
 
     <div id="promo" class="container mx-auto px-4 h-screen">
+
         <div class="flex flex-row">
             <div class="basis-1/2">
                 1
@@ -77,39 +95,74 @@
         </div>
     </div> 
 
-    <div id="menu" class="ml-16">
-        <div class="flex flex-row mb-10 ml-12 space-x-3 ">
-            <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
-                <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
-                <p class="pr-2">Сеты</p>
-            </div>
-            <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
-                <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
-                <p class="pr-2 ">Сеты</p>
-            </div>
-            <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
-                <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
-                <p class="pr-2 ">Сеты</p>
-            </div>
-            <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
-                <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
-                <p class="pr-2 ">Сеты</p>
-            </div>
-            <div class="bg-white flex flex-row shadow-button-shadow rounded-full p-1 items-center hover:text-purple-700 cursor-pointer">
-                <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
-                <p class="pr-2 ">Сеты</p>
-            </div>
-            <div class="bg-white flex flex-row shadow-button-shadow rounded-full p-1 items-center hover:text-purple-700 cursor-pointer">
-                <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
-                <p class="pr-2 ">Сеты</p>
-            </div>
-            <div class="bg-white flex flex-row shadow-button-shadow rounded-full p-1 items-center hover:text-purple-700 cursor-pointer">
-                <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
-                <p class="pr-2 ">Сеты</p>
-            </div>
-            
+    
+    <div  id="menu" class="flex flex-row mb-10 space-x-3 scrollbar-hide">
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-full p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-full p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-full p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-full p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-full p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-full p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
+        </div>
+        <div class="bg-white flex flex-row shadow-button-shadow rounded-full p-1 items-center hover:text-purple-700 cursor-pointer">
+            <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
+            <p class="pr-2 ">Сеты</p>
         </div>
     </div>
+    
 
     <div id="catalog" class = "container mx-auto">
         <div id="category-sety">
