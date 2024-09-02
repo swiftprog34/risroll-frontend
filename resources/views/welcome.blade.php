@@ -11,7 +11,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="header" class="container mx-auto px-4 flex flex-row py-6 items-center justify-between backdrop-blur-sm " >
+    @livewire('navigation-menu')
+
+    <div id="header" class="container mx-auto px-4 flex flex-row py-6 items-center justify-between backdrop-blur-sm relative" >
         <img class="flex-none mr-12" src="{{ asset('assets/system/logo.png') }}" alt="Рис ролл">
         <button class="flex flex-row items-center flex-initial w-64">
             <p class="drop-shadow-drop-text-shadow ">Город</p>
@@ -29,27 +31,14 @@
         <button class="mr-12 rounded-lg shadow-button-shadow px-6 py-1 bg-gradient-to-br from-gradient-pink to bg-gradient-purple text-white">
             Войти
         </button>
-        <nav class="flex justify-between items-center p-4">
-            <div class="drop-shadow-drop-text-shadow cursor-pointer">
+        <nav class="p-4 relative">
+            <div class="drop-shadow-drop-text-shadow cursor-pointer" wire:click="show">
                 <svg  width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="42" height="3" rx="1.5" fill="black"/>
                     <rect y="12" width="35" height="3" rx="1.5" fill="black"/>
                     <rect y="24" width="42" height="3" rx="1.5" fill="black"/>
                 </svg>
-            </div>
-            <div id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 h-full overflow-x-hidden duration-500 z-10">
-                <!--navigation menu box-->
-                <div id="sideNav" class="fixed top-0 right-0 bg-gradient-to-r from-pink-600 to-purple-600 text-black w-0 h-full flex justify-center items-center overflow-x-hidden duration-500 font-bold z-50">
-                    <!--exit icon, it will close navbar when clicked-->
-                    <a href="javascript:void(0)" class="text-3xl absolute top-0 right-0 mr-3 mt-2">&times;</a>
-                    <ul class="text-2xl sm:text-3xl">
-                        <li class="p-2"><a href="#">Films</a></li>
-                        <li class="p-2"><a href="#">Docus</a></li>
-                        <li class="p-2"><a href="#">Notes</a></li>
-                        <li class="p-2"><a href="#">Shop</a></li>
-                    </ul>
-                </div>
-            </div>
+            </div>      
         </nav>
     </div>
 
