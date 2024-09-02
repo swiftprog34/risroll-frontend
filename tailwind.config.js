@@ -36,8 +36,14 @@ export default {
           'gradient-pink': '#de509f',
           'gradient-purple': '#a569f1',
 
+          'gradient-light-purple': '#9b39ff',
+          'gradient-light-blue'  : '#64aefe',
+
+          'product-item-background': '#f0f0f0',
+
           'textarea': '#dcdde0',
           'darkgray': '#a5a6a8',
+          'c' : '5f5f5f',
           'lightgray': '#d9d9d9',
           'active': '#00ce9c',
 
@@ -46,7 +52,27 @@ export default {
           'chat-3': '#e3e3e3',
           'chat-4': '#EEB8EC',
           'chat-5': '#B9DCF2',
-      }
+      },
+
+      container: {
+        center: true,
+
+        screens : {
+          sm: '600px',
+          md: '728px',
+          lg: '1280px',
+          xl: '1280px',
+          '2xl' : '1280px',
+        },
+      },
+
+      boxShadow: {
+        'button-shadow': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+      },
+
+      dropShadow: {
+        'drop-text-shadow': '0px 4px 2px rgba(0,0,0,0.4)',
+      },
     },
     
   },
