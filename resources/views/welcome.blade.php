@@ -157,13 +157,13 @@
         <div id="category-sety">
             <h2 class="mt-10 text-start text-lg">Сеты</h2>
             <div class=" grid grid-cols-5 gap-4">
-                <a class="block mt-24">
+                <a class="block mt-24 cursor-pointer" onclick="Livewire.dispatch('product-selected', { id: id })">
                     <div class="bg-product-item-background rounded-3xl pt-6  flex flex-col px-6 py-4">
                         <img src="{{ asset('assets/images/placeholders/roll.png') }}" class="-mt-14" alt="">
                         <div class="flex flex-row justify-end mt-6">
                             <img src="{{ asset('assets/images/placeholders/seedling.png') }}" class="h-full" alt="">
                         </div>  
-                        <p class="mt-2">Ролл Филадельфия с лососем и много сыра</p>
+                        <p class="mt-2">Ролл Филадельфия с лососем и много сыра 11</p>
                         <div class="flex flex-row justify-between items-center mt-1">
                             <p class="text-xs text-gray-500">8 шт | 232 г</p>
                             <button class="bg-white px-6 py-1 rounded-xl shadow-button-shadow font-medium">
@@ -383,5 +383,17 @@
         
         </div>
     </div>
+
+    <livewire:product>
+       
+    
+
+    <script>
+        function showProduct(id) {
+            console.log(id)
+            Livewire.dispatch('product-selected', { id: id });
+        }
+    </script>
+    
 </body>
 </html>
