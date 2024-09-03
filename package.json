@@ -14,6 +14,7 @@
         "vite": "^5.0"
     },
     "dependencies": {
+        "swiper": "^11.1.12",
         "tailwind-scrollbar-hide": "^1.1.7"
     }
 }
