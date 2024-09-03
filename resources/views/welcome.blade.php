@@ -51,9 +51,7 @@
     </div>
 
     
-
-    
-    <div  id="menu" class="flex flex-row mb-10 space-x-3 scrollbar-hide">
+    <div id="categories-menu" class="flex flex-row mb-10 space-x-3 scrollbar-hide">
         <div class="bg-white flex flex-row shadow-button-shadow rounded-3xl p-1 items-center hover:text-purple-700 cursor-pointer">
             <img class="flex-none mr-2 rounded-full" src="https://placehold.co/45x45" alt="Рис ролл">
             <p class="pr-2">Сеты</p>
