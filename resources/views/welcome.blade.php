@@ -29,9 +29,9 @@
         <p class="flex-initial w-64 drop-shadow-drop-text-shadow">
             +7 846-225-225-9
         </p>
-        <button class="mr-12 rounded-lg shadow-button-shadow px-6 py-1 bg-gradient-to-br from-gradient-pink to bg-gradient-purple text-white">
+        <div class="cursor-pointer mr-12 rounded-lg shadow-button-shadow px-6 py-1 bg-gradient-to-br from-gradient-pink to bg-gradient-purple text-white" onclick="Livewire.dispatch('main-auth-screen-opened')">
             Войти
-        </button>
+        </div>
         <livewire:navigation-menu-button>
         
     </div>
@@ -385,15 +385,9 @@
     </div>
 
     <livewire:product>
-       
+    <livewire:authorization.main>   
     
 
-    <script>
-        function showProduct(id) {
-            console.log(id)
-            Livewire.dispatch('product-selected', { id: id });
-        }
-    </script>
     
 </body>
 </html>
