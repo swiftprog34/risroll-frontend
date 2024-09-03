@@ -3,11 +3,13 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use Livewire\Attributes\On;
 
 class NavigationMenu extends Component
 {
-    public $showMenu = true;
+    public $showMenu = false;
 
+    #[On('main-menu-opened')]
     public function show()
     {
         $this->showMenu = true;

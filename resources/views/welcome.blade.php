@@ -7,11 +7,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800;900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    @livewire('navigation-menu')
+    
 
     <div id="header" class="container mx-auto px-4 flex flex-row py-6 items-center justify-between backdrop-blur-sm relative" >
         <img class="flex-none mr-12" src="{{ asset('assets/system/logo.png') }}" alt="Рис ролл">
@@ -31,16 +32,11 @@
         <button class="mr-12 rounded-lg shadow-button-shadow px-6 py-1 bg-gradient-to-br from-gradient-pink to bg-gradient-purple text-white">
             Войти
         </button>
-        <nav class="p-4 relative">
-            <div class="drop-shadow-drop-text-shadow cursor-pointer" wire:click="show">
-                <svg  width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="42" height="3" rx="1.5" fill="black"/>
-                    <rect y="12" width="35" height="3" rx="1.5" fill="black"/>
-                    <rect y="24" width="42" height="3" rx="1.5" fill="black"/>
-                </svg>
-            </div>      
-        </nav>
+        <livewire:navigation-menu-button>
+        
     </div>
+
+    <livewire:navigation-menu>
 
     <div id="promo" class="container mx-auto px-4 h-screen">
 
@@ -54,35 +50,7 @@
         </div>
     </div>
 
-    <div id="bottom" class="fixed bottom-0 z-50 bg-transparent mx-auto inset-x-0 container">
-        
-        <div class="flex justify-between ">
-            <button type="button" class="inline-flex flex-col items-center justify-center px-5 backdrop-blur-sm rounded-3xl">
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.3333 18.667H50.6667V50.667C50.6667 53.6126 48.2789 56.0003 45.3333 56.0003H18.6667C15.7211 56.0003 13.3333 53.6126 13.3333 50.667V18.667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M46.1429 18L17.8571 18H14L50 18H46.1429Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M40 18C40 18 39.7333 12 37.8667 10C36 8 34 8 32 8C30 8 28 8 26.1333 10C24.2667 12 24 18 24 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-            <button type="button" class="inline-flex flex-col items-center justify-center px-6 border-2 border-gradient-purple backdrop-blur-sm rounded-3xl">
-                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6085 0C22.6635 0 29.2155 6.552 29.2155 14.607C29.2155 18.4073 27.7571 21.8734 25.3705 24.4747L30.0666 29.1611C30.5061 29.6006 30.5076 30.3116 30.0681 30.751C29.8491 30.973 29.5596 31.0826 29.2716 31.0826C28.9851 31.0826 28.6971 30.9731 28.4766 30.7541L23.7238 26.0145C21.2236 28.0168 18.0535 29.2155 14.6085 29.2155C6.5535 29.2155 0 22.662 0 14.607C0 6.552 6.5535 0 14.6085 0ZM14.6085 2.25C7.794 2.25 2.25 7.7925 2.25 14.607C2.25 21.4215 7.794 26.9655 14.6085 26.9655C21.4215 26.9655 26.9655 21.4215 26.9655 14.607C26.9655 7.7925 21.4215 2.25 14.6085 2.25Z" fill="black"/>
-                </svg>
-            </button>
-            <button type="button" class="inline-flex flex-col items-center justify-center px-backdrop-blur-sm rounded-3xl">
-            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" fill="none">
-                <g>
-                <title>Слой 1</title>
-                <path id="svg_1" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="black" d="m63.51178,34.427c-4.0748,4.075 -10.1087,4.956 -15.0466,2.672c-0.7289,-0.293 -1.3265,-0.531 -1.8947,-0.531c-1.5825,0.01 -3.5523,1.544 -4.576,0.522c-1.0237,-1.024 0.5119,-2.996 0.5119,-4.588c0,-0.568 -0.2278,-1.155 -0.5213,-1.885c-2.2846,-4.937 -1.4029,-10.973 2.6719,-15.047c5.2018,-5.204 13.6531,-5.204 18.8548,-0.001c5.2112,5.211 5.2018,13.655 0,18.858z" clip-rule="evenodd" fill-rule="evenodd"/>
-                <path id="svg_2" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="black" d="m59.33588,25.551l0.012,0"/>
-                <path id="svg_3" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="black" d="m53.99048,25.551l0.012,0"/>
-                <path id="svg_4" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="black" d="m48.64518,25.551l0.012,0"/>
-                <path id="svg_5" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="black" d="m36.83468,45.26c10.6375,10.635 13.0507,-1.668 19.8237,5.1c6.5297,6.528 10.2826,7.836 2.0096,16.106c-1.0363,0.833 -7.6203,10.852 -30.759,-12.28c-23.14158,-23.135 -13.1281,-29.726 -12.2951,-30.762c8.2931,-8.293 9.5784,-4.519 16.1081,2.009c6.773,6.771 -5.5249,9.192 5.1127,19.827z" clip-rule="evenodd" fill-rule="evenodd"/>
-                </g>
-            </svg>
-            </button>
-        </div>
-    </div> 
+    
 
     
     <div  id="menu" class="flex flex-row mb-10 space-x-3 scrollbar-hide">
@@ -272,8 +240,37 @@
         </div>
     </div>
 
+    <div id="bottom" class="fixed bottom-0 z-10 bg-transparent mx-auto inset-x-0 container">       
+        <div class="flex justify-between ">
+            <button type="button" class="inline-flex flex-col items-center justify-center px-5 backdrop-blur-sm rounded-3xl">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3333 18.667H50.6667V50.667C50.6667 53.6126 48.2789 56.0003 45.3333 56.0003H18.6667C15.7211 56.0003 13.3333 53.6126 13.3333 50.667V18.667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M46.1429 18L17.8571 18H14L50 18H46.1429Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 18C40 18 39.7333 12 37.8667 10C36 8 34 8 32 8C30 8 28 8 26.1333 10C24.2667 12 24 18 24 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button type="button" class="inline-flex flex-col items-center justify-center px-6 border-2 border-gradient-purple backdrop-blur-sm rounded-3xl">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6085 0C22.6635 0 29.2155 6.552 29.2155 14.607C29.2155 18.4073 27.7571 21.8734 25.3705 24.4747L30.0666 29.1611C30.5061 29.6006 30.5076 30.3116 30.0681 30.751C29.8491 30.973 29.5596 31.0826 29.2716 31.0826C28.9851 31.0826 28.6971 30.9731 28.4766 30.7541L23.7238 26.0145C21.2236 28.0168 18.0535 29.2155 14.6085 29.2155C6.5535 29.2155 0 22.662 0 14.607C0 6.552 6.5535 0 14.6085 0ZM14.6085 2.25C7.794 2.25 2.25 7.7925 2.25 14.607C2.25 21.4215 7.794 26.9655 14.6085 26.9655C21.4215 26.9655 26.9655 21.4215 26.9655 14.607C26.9655 7.7925 21.4215 2.25 14.6085 2.25Z" fill="black"/>
+                </svg>
+            </button>
+            <button type="button" class="inline-flex flex-col items-center justify-center px-backdrop-blur-sm rounded-3xl">
+            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <g>
+                <title>Слой 1</title>
+                <path id="svg_1" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="black" d="m63.51178,34.427c-4.0748,4.075 -10.1087,4.956 -15.0466,2.672c-0.7289,-0.293 -1.3265,-0.531 -1.8947,-0.531c-1.5825,0.01 -3.5523,1.544 -4.576,0.522c-1.0237,-1.024 0.5119,-2.996 0.5119,-4.588c0,-0.568 -0.2278,-1.155 -0.5213,-1.885c-2.2846,-4.937 -1.4029,-10.973 2.6719,-15.047c5.2018,-5.204 13.6531,-5.204 18.8548,-0.001c5.2112,5.211 5.2018,13.655 0,18.858z" clip-rule="evenodd" fill-rule="evenodd"/>
+                <path id="svg_2" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="black" d="m59.33588,25.551l0.012,0"/>
+                <path id="svg_3" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="black" d="m53.99048,25.551l0.012,0"/>
+                <path id="svg_4" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="black" d="m48.64518,25.551l0.012,0"/>
+                <path id="svg_5" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="black" d="m36.83468,45.26c10.6375,10.635 13.0507,-1.668 19.8237,5.1c6.5297,6.528 10.2826,7.836 2.0096,16.106c-1.0363,0.833 -7.6203,10.852 -30.759,-12.28c-23.14158,-23.135 -13.1281,-29.726 -12.2951,-30.762c8.2931,-8.293 9.5784,-4.519 16.1081,2.009c6.773,6.771 -5.5249,9.192 5.1127,19.827z" clip-rule="evenodd" fill-rule="evenodd"/>
+                </g>
+            </svg>
+            </button>
+        </div>
+    </div> 
+
     <div id="footer" class="mt-10 bottom-0 bg-gradient-to-br from-gradient-pink to bg-gradient-purple font-normal">
-        <div class="flow-root relative">
+        <div class="flow-root">
             <div class="rounded-2xl container mx-auto bg-white mt-6 p-8">
                 <div class="flex flex-row justify-between">
                     <div class="flex-none mr-12">
@@ -344,7 +341,7 @@
 
             <p class="uppercase container mx-auto text-xs text-center mt-4">© 2024 ИП ЧИЖОВ ИЛЬЯ АЛЕКСАНДРОВИЧ 443030, РОССИЯ, САМАРСКАЯ ОБЛ, Г САМАРА, УЛ Г.С.АКСАКОВА, Д 19А, КВ 2 ИНН 631185025066, ОГРН 321631300044700.</p>
 
-            <div class="flex flex-row container mx-auto mt-16 justify-between relative mb-16">
+            <div class="flex flex-row container mx-auto mt-16 justify-between mb-16">
                 <p class="text-white text-4xl font-semibold text-left basis-2/5">Если у вас есть вопросы или хотите что бы вам перезвонили?</p>
                 <div class="basis-2/5">
                     <p class="text-white text-xs mt-16 ">Просто отправьте нам свой номер, и мы свяжемся с вами.</p>
