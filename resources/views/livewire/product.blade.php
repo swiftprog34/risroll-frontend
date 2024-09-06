@@ -2,7 +2,7 @@
 @if ($showProduct)
     <div id="product" class="fixed top-0 -right-10 bg-transparent w-full h-full duration-500 z-50">
         <!--navigation menu box-->
-        <div id="sideProduct" class="fixed top-0 right-0 bg-white text-black w-2/3 h-full duration-500 z-50 rounded-3xl flex flex-row">
+        <div id="sideProduct" class="fixed top-0 right-0 bg-white text-black w-2/3 h-full duration-500 z-50 rounded-3xl flex flex-row shadow-2xl">
             <!--exit icon, it will close navbar when clicked-->
             <div class="bg-lightgray rounded-3xl h-full w-1/2 relative flex flex-col justify-center">
                 <a wire:click="close" class="text-7xl absolute top-0 left-0 ml-8 mt-8 cursor-pointer">

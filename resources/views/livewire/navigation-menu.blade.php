@@ -1,7 +1,7 @@
 <div @if ($showMenu) class="block" @else class="hidden" @endif>
-    <div id="sideBar" class="fixed top-0 -right-10 bg-transparent h-full duration-500 z-50 ">
+    <div id="sideBar" class="fixed top-0 -right-10 bg-transparent h-full duration-500 z-50 shadow-2xl">
         <!--navigation menu box-->
-        <div id="sideNav" class="fixed top-0 right-0 bg-gradient-to-r from-pink-600 to-purple-600 text-white w-2/6 h-full duration-500 z-50 pl-20 pr-10 py-8 rounded-3xl">
+        <div id="sideNav" class="fixed top-0 right-0 bg-gradient-to-r from-pink-600 to-purple-600 text-white w-2/6 h-full duration-500 z-50 pl-20 pr-10 py-8 rounded-3xl ">
             <!--exit icon, it will close navbar when clicked-->
             <a wire:click="close" class="text-7xl fixed top-0 right-0 mr-3 mt-1 pr-10 pt-2 cursor-pointer font-light">&times;</a>
             <ul class="text-xl sm:text-xl space-y-9 w-1/2">

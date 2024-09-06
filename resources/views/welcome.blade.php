@@ -23,7 +23,7 @@
             </svg>
         </button>
         <div  class="flex flex-row flex-initial w-96 items-center">
-            <p class="drop-shadow-drop-text-shadow mr-1">Укажи адрес</p>
+            <p class="drop-shadow-drop-text-shadow mr-1 text-base">Укажи адрес</p>
             <p class="drop-shadow-drop-text-shadow text-xs pt-1">~ 50-60 мин</p>
         </div>
         <p class="flex-initial w-64 drop-shadow-drop-text-shadow">
@@ -385,7 +385,7 @@
     <livewire:product>
     <livewire:authorization.main>   
     <livewire:user.wishlist>
-    
+    <livewire:user.main-profile>
 
     
 </body>

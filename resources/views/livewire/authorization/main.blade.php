@@ -1,7 +1,7 @@
 <div>
     @if($authRequest)
     <div class="fixed top-0 -right-10 bg-transparent h-full duration-500 z-50">
-        <div class="fixed top-0 right-0 bg-white text-black w-1/4 h-full duration-500 z-50 px-3 py-3 overflow-y-scroll no-scrollbar">
+        <div class="fixed top-0 right-0 bg-white text-black w-[28rem] h-full duration-500 z-50 p-4 overflow-y-scroll no-scrollbar shadow-2xl">
             @if(!$emailSuccess || !$phoneSuccess)
             <a class="mb-3" href="" wire:click="close">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,14 +22,14 @@
                 <div class="flex place-content-center">
                     <img src="{{ asset('assets/images/placeholders/auth.png') }}" class="" alt="">
                 </div>
-                <p class="text-2xl mt-1">Авторизуйся</p>
-                <p class="mt-6">По номеру телефона</p>
+                <p class="text-2xl mt-1 font-medium">Авторизуйся</p>
+                <p class="mt-6 text-xl">По номеру телефона</p>
                 <div class="flex flex-row mt-6 w-full">
-                    <p class="mt-6 py-2 px-2 rounded-lg border-darkgray border-2 mr-2">+7</p>
-                    <p wire:click="openPhoneAuthScreen" class="mt-6 py-2 px-2 rounded-lg border-darkgray border-2 text-darkgray cursor-pointer grow"><span class="text-black">|</span>(999)-999-99-99</p>
+                    <p class="mt-6 py-2 px-2 text-lg rounded-lg border-darkgray border-2 mr-2">+7</p>
+                    <p wire:click="openPhoneAuthScreen" class="text-lg mt-6 py-2 px-2 rounded-lg border-darkgray border-2 text-darkgray cursor-pointer grow"><span class="text-black">|</span>(999)-999-99-99</p>
                 </div>
-                <p class="mt-6">По электронной почте</p>
-                <p wire:click="openEmailAuthScreen" class="mt-6 py-2 px-1 rounded-lg border-darkgray border-2 text-darkgray cursor-pointer"><span class="text-black">|</span>RisRoll@mail.ru</p>
+                <p class="mt-6 text-xl">По электронной почте</p>
+                <p wire:click="openEmailAuthScreen" class="text-lg mt-6 py-2 px-1 rounded-lg border-darkgray border-2 text-darkgray cursor-pointer"><span class="text-black">|</span>RisRoll@mail.ru</p>
 
                 <p class="mt-4 center text-xs">Авторизовываясь на сайте</p>
                 <p class="mt-1 center text-xs">я соглашаюсь с <span class="underline">условиями использования</span></p>
@@ -41,11 +41,11 @@
                 <div class="flex place-content-center">
                     <img src="{{ asset('assets/images/placeholders/auth.png') }}" class="" alt="">
                 </div>
-                <p class="text-2xl mt-1">Авторизуйся</p>
-                <p class="mt-6">Напиши свой номер телефона,<br>чтобы войти на сайт</p>
-                <div class="flex flex-row mt-1 w-full">
-                    <p class="mt-2 py-2 px-2 rounded-lg border-darkgray border-2 mr-2">+7</p>
-                    <input class="mt-2 py-2 px-2 rounded-lg border-darkgray border-2 grow" placeholder="(999)-999-99-99"></input>
+                <p class="text-2xl mt-1 font-medium">Авторизуйся</p>
+                <p class="mt-6 text-xl">Напиши свой номер телефона,<br>чтобы войти на сайт</p>
+                <div class="flex flex-row mt-3 w-full">
+                    <p class="mt-2 py-2 px-2 text-lg rounded-lg border-darkgray border-2 mr-2">+7</p>
+                    <input class="mt-2 py-2 text-lg px-2 rounded-lg border-darkgray border-2 grow" placeholder="(999)-999-99-99"></input>
                 </div>
 
                 <p class="mt-10 center text-xs">Авторизовываясь на сайте</p>
@@ -55,7 +55,7 @@
             @endif
 
             @if($phoneConfirmation)
-                <p class="mt-8">Введите 4-х значный код<br>подтверждения, отправленный на<br>ваш номер телефона</p>
+                <p class="mt-8 text-xl">Введите 4-х значный код<br>подтверждения, отправленный на<br>ваш номер телефона</p>
                 <div class="flex flex-row mt-12 justify-center space-x-1">
                     <input maxlenght="1" required class="max-w-12 py-2 px-2 rounded-lg border-lightgray border-2 text-2xl"></input>
                     <input required class="max-w-12 py-2 px-2 rounded-lg border-lightgray border-2 text-2xl"></input>
@@ -98,10 +98,10 @@
             <div class="flex place-content-center">
                     <img src="{{ asset('assets/images/placeholders/auth.png') }}" class="" alt="">
                 </div>
-                <p class="text-2xl mt-1">Авторизуйся</p>
-                <p class="mt-6">Напиши свою электронную почту,<br>чтобы войти на сайт</p>
-                <div class="flex flex-row mt-1 w-full">
-                    <input class="mt-2 py-2 px-2 rounded-lg border-darkgray border-2 grow" placeholder="RisRoll@mail.ru"></input>
+                <p class="text-2xl mt-1 font-medium">Авторизуйся</p>
+                <p class="mt-6 text-xl">Напиши свою электронную почту,<br>чтобы войти на сайт</p>
+                <div class="flex flex-row mt-3 w-full">
+                    <input class="mt-2 py-2 px-2 rounded-lg border-darkgray border-2 grow text-lg" placeholder="RisRoll@mail.ru"></input>
                 </div>
 
                 <p class="mt-10 center text-xs">Авторизовываясь на сайте</p>
@@ -112,7 +112,7 @@
 
 
             @if($emailConfirmation)
-                <p class="mt-8">Введите 4-х значный код<br>подтверждения, отправленный на<br>вашу электронную почту</p>
+                <p class="mt-8 text-xl">Введите 4-х значный код<br>подтверждения, отправленный на<br>вашу электронную почту</p>
                 <div class="flex flex-row mt-12 justify-center space-x-1">
                     <input maxlenght="1" required class="max-w-12 py-2 px-2 rounded-lg border-lightgray border-2 text-2xl"></input>
                     <input required class="max-w-12 py-2 px-2 rounded-lg border-lightgray border-2 text-2xl"></input>

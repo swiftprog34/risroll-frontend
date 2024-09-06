@@ -7,7 +7,7 @@
                 <path d="M27.1667 11.6665C28.95 12.2432 30.21 13.8348 30.3617 15.7032" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>   
-        <div class="block" href="">
+        <div class="cursor-pointer" wire:click="openProfile">
             <img src="{{ asset('assets/images/placeholders/user-icon.png') }}" alt="">
         </div> 
     </div>    
