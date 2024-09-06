@@ -49,6 +49,7 @@ class Main extends Component
         $this->phoneAuthorization = false;
         $this->phoneConfirmation = false;
         $this->phoneSuccess = true;
+        $this->dispatch('authorization-has-passed');
     }
 
 
@@ -77,6 +78,7 @@ class Main extends Component
         $this->emailAuthorization = false;
         $this->emailConfirmation = false;
         $this->emailSuccess = true;
+        $this->dispatch('authorization-has-passed');
     }
 
     public function close() {

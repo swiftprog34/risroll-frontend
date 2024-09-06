@@ -29,9 +29,7 @@
         <p class="flex-initial w-64 drop-shadow-drop-text-shadow">
             +7 846-225-225-9
         </p>
-        <div class="cursor-pointer mr-12 rounded-lg shadow-button-shadow px-6 py-1 bg-gradient-to-br from-gradient-pink to bg-gradient-purple text-white" onclick="Livewire.dispatch('main-auth-screen-opened')">
-            Войти
-        </div>
+        <livewire:user.navigation-buttons>
         <livewire:navigation-menu-button>
         
     </div>
@@ -386,6 +384,7 @@
 
     <livewire:product>
     <livewire:authorization.main>   
+    <livewire:user.wishlist>
     
 
     

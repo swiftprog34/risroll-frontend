@@ -22,7 +22,7 @@
                 <img src="{{ asset('assets/images/placeholders/product-roll.png') }}" class="" alt="">
 
             </div>
-            <div class="h-full w-1/2 relative pl-10 pt-10">
+            <div class="h-full w-1/2 relative pl-10 pt-10 overflow-y-scroll no-scrollbar">
                 <h2 class="font-medium text-2xl">Ролл Филадельфия с клубникой и соусом манго</h2>
                 <div class="flex flex-row justify-between mt-10 mr-16 items-center">
                     <p class="text-xs text-gray-500">8 шт | 232 г</p>
