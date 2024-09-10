@@ -16,7 +16,7 @@ class Wishlist extends Component
     }
 
     public function close() {
-        $this->reset();
+        $this->showWishlist = false;
     }
 
     public function render()

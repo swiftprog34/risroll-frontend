@@ -1,6 +1,6 @@
 <div>
     @if ($showMainProfile)
-    <div class="fixed top-0 -right-10 bg-transparent h-full duration-500 z-50">
+    <div class="fixed top-0 right-0 bg-transparent h-full duration-500 z-50" wire:transition.origin.right>
         <div class="fixed top-0 right-0 bg-gradient-to-tr from-[#53ccb5] via-[#f764f6] to-[#784df8]  text-white w-[28rem] shadow-2xl h-full duration-500 z-50 px-4 py-10 overflow-y-scroll no-scrollbar">
             
             <a class="mb-3" href="" wire:click="close">

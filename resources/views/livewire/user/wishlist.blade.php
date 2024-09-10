@@ -1,6 +1,6 @@
 <div>
     @if($showWishlist)
-    <div class="fixed top-0 -right-10 bg-transparent h-full duration-500 z-10">
+    <div class="fixed top-0 right-0 bg-transparent h-full duration-500 z-10" wire:transition.origin.right>
         <div class="fixed top-0 right-0 bg-white text-black w-[28rem] h-full duration-500 z-50 px-3 py-3 overflow-y-scroll no-scrollbar shadow-2xl">
             
             <a class="mb-3" href="" wire:click="close">

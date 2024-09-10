@@ -37,7 +37,7 @@ class MainProfile extends Component
     }
 
     public function close() {
-        $this->reset();
+        $this->showMainProfile = false;
     }
 
     public function render()

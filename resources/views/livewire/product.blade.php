@@ -1,6 +1,6 @@
 <div>
 @if ($showProduct)
-    <div id="product" class="fixed top-0 -right-10 bg-transparent w-full h-full duration-500 z-50">
+    <div id="product" class="fixed top-0 right-0 bg-transparent w-full h-full duration-500 z-50" wire:transition.origin.right>
         <!--navigation menu box-->
         <div id="sideProduct" class="fixed top-0 right-0 bg-white text-black w-2/3 h-full duration-500 z-50 rounded-3xl flex flex-row shadow-2xl">
             <!--exit icon, it will close navbar when clicked-->
