@@ -16,6 +16,13 @@ class NavigationButtons extends Component
         $this->isAuthorized = true;
     }
 
+    #[On('client-logout')]
+    public function clientLogout()
+    {
+        $this->isAuthorized = false;
+        $this->reset();
+    }
+
     public function openWishlist()
     {
         $this->dispatch('wishlist-opened'); 

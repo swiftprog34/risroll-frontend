@@ -386,7 +386,7 @@
     <livewire:authorization.main>   
     <livewire:user.wishlist>
     <livewire:user.main-profile>
-
+    <livewire:user.profile>
     
 </body>
 </html>

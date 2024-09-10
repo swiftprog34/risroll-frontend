@@ -16,35 +16,25 @@
                     </defs>
                 </svg>
             </a>
-            
-
-                <div class="flex justify-center mt-10">
-                    <div class="px-24 py-10 border-white/50 border-2 rounded-2xl text-center bg-white/20">
-                        <p class="font-extrabold text-5xl text-white/20 leading-[4.5rem]">Бонус<br>скоро</p>
-                    </div>
+            <div class="flex justify-center mt-10">
+                <div class="px-24 py-10 border-white/50 border-2 rounded-2xl text-center bg-white/20">
+                    <p class="font-extrabold text-5xl text-white/20 leading-[4.5rem]">Бонус<br>скоро</p>
                 </div>
-     
-                    <ul class="text-2xl space-y-8  mt-20 px-10">
-                        <li>
-                            <a href="#">Адреса доставки</a>
-                        </li>
-                        <li>
-                            <a href="#">Заказы</a>
-                        </li>
-                        <li>
-                            <a href="#">Профиль</a>
-                        </li>
-                        <li class="text-blue-700">
-                            <a href="#">Выйти</a>
-                        </li>
-                    
-                    </ul>
-              
-
-            
-
-           
-
+            </div>
+            <ul class="text-2xl space-y-8  mt-20 px-10">
+                <li>
+                    <a class="cursor-pointer" wire:click="adresses">Адреса доставки</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" wire:click="orders">Заказы</a>
+                </li>
+                <li>
+                    <a class="cursor-pointer" wire:click="profile">Профиль</a>
+                </li>
+                <li class="text-blue-700">
+                    <a class="cursor-pointer" wire:click="logout">Выйти</a>
+                </li>      
+            </ul>
         </div>   
     </div>
     @endif
