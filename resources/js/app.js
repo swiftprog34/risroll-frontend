@@ -6,14 +6,14 @@ import { register } from 'swiper/element/bundle';
 register();
 
 class GradientAnimation {
-  constructor() {
-    this.cnv        = document.querySelector(`canvas`);
+  constructor(element, minRadius, maxRadius, speed, count) {
+    this.cnv        = document.querySelector(element);
     this.ctx        = this.cnv.getContext(`2d`);
 
-    this.circlesNum = 15;
-    this.minRadius  = 100;
-    this.maxRadius  = 300;
-    this.speed      = .007;
+    this.circlesNum = count;
+    this.minRadius  = minRadius;
+    this.maxRadius  = maxRadius;
+    this.speed      = speed;
     
     (window.onresize = () => {
       this.setCanvasSize();
@@ -52,10 +52,10 @@ class Circle {
     this.y = Math.random() * h;
     this.angle  = Math.random() * Math.PI * 2;
     this.radius = Math.random() * (maxR - minR) + minR;
-    this.firstColor  = `hsla(256, 100%, 54%, 0)`;
+    this.firstColor  = `hsla(256, 70%, 54%, 0)`;
     // this.secondColor = `hsla(259, 100%, 50%, 0)`;
     // this.thirdColor = `hsla(336, 100%, 50%, 0)`;
-    this.fourthColor = `hsla(166, 63%, 50%, 1)`;
+    this.fourthColor = `hsla(166, 33%, 50%, 1)`;
     // this.firstColor  = `hsla(${Math.random() * 360}, 100%, 50%, 1)`;
     // this.secondColor = `hsla(${Math.random() * 360}, 100%, 50%, 0)`;
   }
@@ -80,7 +80,8 @@ class Circle {
 }
 
 window.onload = () => {
-  new GradientAnimation();
+  new GradientAnimation(`#menu-desktop-canvas`, 200, 200, .007, 15);
+  new GradientAnimation(`#footer-canvas`, 300, 500, .004, 8);
 }
 
 

@@ -1,10 +1,10 @@
-<div>
-@if ($showMenu)
+<div @if ($showMenu) class="block" @else class="hidden" @endif >
+
     <div id="sideBar" class="fixed top-0 right-0 bg-transparent h-full duration-500 z-50 shadow-2xl" wire:transition.origin.right>
         <!--navigation menu box-->
 
         <div id="sideNav" class="fixed top-0 right-0  text-white w-[28rem] h-full duration-500 z-50 pl-20 pr-10 py-8 rounded-3xl" >
-        <canvas class="fixed top-0 right-0 bg-gradient-to-r from-pink-600 to-purple-600 text-white w-[28rem] h-full duration-500 -z-10 rounded-3xl"></canvas>
+        <canvas id="menu-desktop-canvas" class="fixed top-0 right-0 bg-gradient-to-r from-pink-600 to-purple-600 text-white w-[28rem] h-full duration-500 -z-10 rounded-3xl"></canvas>
             <!--exit icon, it will close navbar when clicked-->
             <a wire:click="close" class="text-7xl fixed top-0 right-0 mr-3 mt-1 pr-10 pt-2 cursor-pointer font-light">&times;</a>
             <div class="flex flex-col justify-between h-full">
@@ -93,5 +93,5 @@
             </div>
         </div>
     </div>
-    @endif
+    
 </div>

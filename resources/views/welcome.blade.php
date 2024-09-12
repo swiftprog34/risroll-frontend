@@ -10,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800;900&display=swap" rel="stylesheet">
     <title>Document</title>
-</head>
+</head>     
 <body class="relative">
     
 
@@ -40,7 +40,7 @@
 
         <div class="flex flex-row">
             <div class="basis-1/2">
-                1
+                <img src="{{ asset('assets/images/placeholders/chat-feed.png') }}" class="-mt-14" alt="">
             </div>
             <div class="basis-1/2">
                 2
@@ -157,7 +157,7 @@
             <div class=" grid grid-cols-5 gap-4">
                 <a class="block mt-24 cursor-pointer" onclick="Livewire.dispatch('product-selected', { id: id })">
                     <div class="bg-product-item-background rounded-3xl pt-6  flex flex-col px-6 py-4">
-                        <img src="{{ asset('assets/images/placeholders/roll.png') }}" class="-mt-14" alt="">
+                        <img src="{{ asset('assets/images/placeholders/roll.png') }}" class="-mt-14" alt="">    
                         <div class="flex flex-row justify-end mt-6">
                             <img src="{{ asset('assets/images/placeholders/seedling.png') }}" class="h-full" alt="">
                         </div>  
@@ -299,7 +299,8 @@
         </div>
     </div> 
 
-    <div id="footer" class="mt-10 bottom-0 bg-gradient-to-br from-gradient-pink to bg-gradient-purple font-normal">
+    <div id="footer" class="mt-10 bottom-0  font-normal relative">
+    <canvas id="footer-canvas" class="absolute mt-10 bottom-0 bg-gradient-to-r from-pink-600 to-purple-600 text-white w-full h-full duration-500 -z-10 rounded-3xl"></canvas>
         <div class="flow-root">
             <div class="rounded-2xl container mx-auto bg-white mt-6 p-8">
                 <div class="flex flex-row justify-between">
