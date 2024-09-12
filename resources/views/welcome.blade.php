@@ -37,10 +37,56 @@
     <livewire:navigation-menu>
 
     <div id="promo" class="container mx-auto px-4 h-screen">
-
         <div class="flex flex-row">
             <div class="basis-1/2">
-                <img src="{{ asset('assets/images/placeholders/chat-feed.png') }}" class="-mt-14" alt="">
+                <div id="chat-feed" >
+                    <div class="swiper-wrapper -z-10 flex flex-col max-h-96" 
+                        style="-webkit-transition-timing-function: linear !important;
+                                -o-transition-timing-function: linear !important;
+                                transition-timing-function: linear !important;
+                            margin: 0 auto !important;"> 
+                        <div class="swiper-slide w-3/4 bg-chat-1 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
+                            <p class="text-xs text-darkgray self-start">Настя с работы</p>
+                            <p class="text-xl mt-4">Закажи роллов. Досмотрим последнюю серию</p>
+                        </div>
+                        <div class="swiper-slide w-3/4 bg-chat-2 rounded-3xl p-10 mt-36 self-start flex flex-col items-start">
+                            <p class="text-xs text-darkgray self-start">ЛП</p>
+                            <p class="text-xl mt-4">Заказала тех самых которые нам понравились</p>
+                        </div>
+                        <div class="swiper-slide w-3/4 bg-chat-3 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
+                            <p class="text-xs text-darkgray self-start">Женёк</p>
+                            <p class="text-xl mt-4">Я решил Том ям заказать. Острого охота сегодня</p>
+                        </div>
+                        <div class="swiper-slide w-3/4 bg-chat-4 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
+                            <p class="text-xs text-darkgray self-start">Саня маркетолог</p>
+                            <p class="text-xl mt-4">На корпоратив закажем роллов</p>
+                        </div>
+                        <div class="swiper-slide w-3/4 bg-chat-5 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
+                            <p class="text-xs text-darkgray self-start">Максим с качалки</p>
+                            <p class="text-xl mt-4">Хочу мега огромный сет!!!</p>
+                        </div>
+                        <div class="swiper-slide w-3/4 bg-chat-1 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
+                            <p class="text-xs text-darkgray self-start">Настя с работы</p>
+                            <p class="text-xl mt-4">Закажи роллов. Досмотрим последнюю серию</p>
+                        </div>
+                        <div class="swiper-slide w-3/4 bg-chat-2 rounded-3xl p-10 mt-36 self-start flex flex-col items-start">
+                            <p class="text-xs text-darkgray self-start">ЛП</p>
+                            <p class="text-xl mt-4">Заказала тех самых которые нам понравились</p>
+                        </div>
+                        <div class="swiper-slide w-3/4 bg-chat-3 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
+                            <p class="text-xs text-darkgray self-start">Женёк</p>
+                            <p class="text-xl mt-4">Я решил Том ям заказать. Острого охота сегодня</p>
+                        </div>
+                        <div class="swiper-slide w-3/4 bg-chat-4 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
+                            <p class="text-xs text-darkgray self-start">Саня маркетолог</p>
+                            <p class="text-xl mt-4">На корпоратив закажем роллов</p>
+                        </div>
+                        <div class="swiper-slide w-3/4 bg-chat-5 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
+                            <p class="text-xs text-darkgray self-start">Максим с качалки</p>
+                            <p class="text-xl mt-4">Хочу мега огромный сет!!!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="basis-1/2">
                 2

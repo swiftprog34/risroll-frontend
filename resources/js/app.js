@@ -1,9 +1,6 @@
 import './bootstrap';
 
-// import function to register Swiper custom elements
-import { register } from 'swiper/element/bundle';
-// register Swiper custom elements
-register();
+import Swiper from 'swiper/bundle';
 
 class GradientAnimation {
   constructor(element, minRadius, maxRadius, speed, count) {
@@ -83,6 +80,19 @@ window.onload = () => {
   new GradientAnimation(`#menu-desktop-canvas`, 200, 200, .007, 15);
   new GradientAnimation(`#footer-canvas`, 300, 500, .004, 8);
 }
+
+var mySwiper = new Swiper ('#chat-feed', {
+  direction: "vertical",
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  loop: true,
+  centeredSlides: true,
+  speed: 3500,
+  autoplay: {
+      delay: 0,
+      disableOnInteraction: true,
+  },
+})
 
 
 
