@@ -52,6 +52,8 @@ export default {
           'chat-3': '#e3e3e3',
           'chat-4': '#EEB8EC',
           'chat-5': '#B9DCF2',
+
+          'promotion-background': '#9a6aff',
       },
 
       container: {

@@ -81,7 +81,7 @@ window.onload = () => {
   new GradientAnimation(`#footer-canvas`, 300, 500, .004, 8);
 }
 
-var mySwiper = new Swiper ('#chat-feed', {
+new Swiper ('#chat-feed', {
   direction: "vertical",
   slidesPerView: "auto",
   spaceBetween: 10,
@@ -93,6 +93,23 @@ var mySwiper = new Swiper ('#chat-feed', {
       disableOnInteraction: true,
   },
 })
+
+new Swiper("#promotions", {
+  slidesPerView: 3.3,
+  spaceBetween: 0,
+  centeredSlides: true,
+  // centeredSlidesBounds: true,
+  // slideToClickedSlide: true,
+  simulateTouch: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 
 

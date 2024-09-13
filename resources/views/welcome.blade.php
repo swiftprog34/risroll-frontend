@@ -13,86 +13,103 @@
 </head>     
 <body class="relative">
     
-
-    <div id="header" class="container mx-auto px-4 flex flex-row py-6 items-center justify-between backdrop-blur-sm relative" >
-        <img class="flex-none mr-12" src="{{ asset('assets/system/logo.png') }}" alt="Рис ролл">
-        <button class="flex flex-row items-center flex-initial w-64">
-            <p class="drop-shadow-drop-text-shadow ">Город</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
-        </button>
-        <div  class="flex flex-row flex-initial w-96 items-center">
-            <p class="drop-shadow-drop-text-shadow mr-1 text-base">Укажи адрес</p>
-            <p class="drop-shadow-drop-text-shadow text-xs pt-1">~ 50-60 мин</p>
+    <div class="">
+        <div id="header" class="container mx-auto px-4 flex flex-row py-6 items-center justify-between backdrop-blur-sm relative" >
+            <img class="flex-none mr-12" src="{{ asset('assets/system/logo.png') }}" alt="Рис ролл">
+            <button class="flex flex-row items-center flex-initial w-64">
+                <p class="drop-shadow-drop-text-shadow ">Город</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </button>
+            <div  class="flex flex-row flex-initial w-96 items-center">
+                <p class="drop-shadow-drop-text-shadow mr-1 text-base">Укажи адрес</p>
+                <p class="drop-shadow-drop-text-shadow text-xs pt-1">~ 50-60 мин</p>
+            </div>
+            <p class="flex-initial w-64 drop-shadow-drop-text-shadow">
+                +7 846-225-225-9
+            </p>
+            <livewire:user.navigation-buttons>
+            <livewire:navigation-menu-button>
+            
         </div>
-        <p class="flex-initial w-64 drop-shadow-drop-text-shadow">
-            +7 846-225-225-9
-        </p>
-        <livewire:user.navigation-buttons>
-        <livewire:navigation-menu-button>
-        
-    </div>
 
-    <livewire:navigation-menu>
+        <livewire:navigation-menu>
 
-    <div id="promo" class="container mx-auto px-4 h-screen">
-        <div class="flex flex-row">
-            <div class="basis-1/2">
-                <div id="chat-feed" >
-                    <div class="swiper-wrapper -z-10 flex flex-col max-h-96" 
-                        style="-webkit-transition-timing-function: linear !important;
-                                -o-transition-timing-function: linear !important;
-                                transition-timing-function: linear !important;
-                            margin: 0 auto !important;"> 
-                        <div class="swiper-slide w-3/4 bg-chat-1 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
-                            <p class="text-xs text-darkgray self-start">Настя с работы</p>
-                            <p class="text-xl mt-4">Закажи роллов. Досмотрим последнюю серию</p>
-                        </div>
-                        <div class="swiper-slide w-3/4 bg-chat-2 rounded-3xl p-10 mt-36 self-start flex flex-col items-start">
-                            <p class="text-xs text-darkgray self-start">ЛП</p>
-                            <p class="text-xl mt-4">Заказала тех самых которые нам понравились</p>
-                        </div>
-                        <div class="swiper-slide w-3/4 bg-chat-3 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
-                            <p class="text-xs text-darkgray self-start">Женёк</p>
-                            <p class="text-xl mt-4">Я решил Том ям заказать. Острого охота сегодня</p>
-                        </div>
-                        <div class="swiper-slide w-3/4 bg-chat-4 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
-                            <p class="text-xs text-darkgray self-start">Саня маркетолог</p>
-                            <p class="text-xl mt-4">На корпоратив закажем роллов</p>
-                        </div>
-                        <div class="swiper-slide w-3/4 bg-chat-5 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
-                            <p class="text-xs text-darkgray self-start">Максим с качалки</p>
-                            <p class="text-xl mt-4">Хочу мега огромный сет!!!</p>
-                        </div>
-                        <div class="swiper-slide w-3/4 bg-chat-1 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
-                            <p class="text-xs text-darkgray self-start">Настя с работы</p>
-                            <p class="text-xl mt-4">Закажи роллов. Досмотрим последнюю серию</p>
-                        </div>
-                        <div class="swiper-slide w-3/4 bg-chat-2 rounded-3xl p-10 mt-36 self-start flex flex-col items-start">
-                            <p class="text-xs text-darkgray self-start">ЛП</p>
-                            <p class="text-xl mt-4">Заказала тех самых которые нам понравились</p>
-                        </div>
-                        <div class="swiper-slide w-3/4 bg-chat-3 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
-                            <p class="text-xs text-darkgray self-start">Женёк</p>
-                            <p class="text-xl mt-4">Я решил Том ям заказать. Острого охота сегодня</p>
-                        </div>
-                        <div class="swiper-slide w-3/4 bg-chat-4 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
-                            <p class="text-xs text-darkgray self-start">Саня маркетолог</p>
-                            <p class="text-xl mt-4">На корпоратив закажем роллов</p>
-                        </div>
-                        <div class="swiper-slide w-3/4 bg-chat-5 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
-                            <p class="text-xs text-darkgray self-start">Максим с качалки</p>
-                            <p class="text-xl mt-4">Хочу мега огромный сет!!!</p>
+        <div id="promo" class="container mx-auto px-4 relative">
+            <div class="flex flex-row h-screen space-x-8">
+                <div class="basis-1/2">
+                    <div id="chat-feed" >
+                        <div class="swiper-wrapper -z-10 flex flex-col max-h-96" 
+                            style="-webkit-transition-timing-function: linear !important;
+                                    -o-transition-timing-function: linear !important;
+                                    transition-timing-function: linear !important;
+                                margin: 0 auto !important;"> 
+                            <div class="swiper-slide w-3/4 bg-chat-1 rounded-3xl p-8 mt-32 self-center flex flex-col items-start">
+                                <p class="text-xs text-darkgray self-start">Настя с работы</p>
+                                <p class="text-xl mt-4">Закажи роллов. Досмотрим последнюю серию</p>
+                            </div>
+                            <div class="swiper-slide w-3/4 bg-chat-2 rounded-3xl p-8 mt-32 self-start flex flex-col items-start">
+                                <p class="text-xs text-darkgray self-start">ЛП</p>
+                                <p class="text-xl mt-4">Заказала тех самых которые нам понравились</p>
+                            </div>
+                            <div class="swiper-slide w-3/4 bg-chat-3 rounded-3xl p-8 mt-32 self-end flex flex-col items-start">
+                                <p class="text-xs text-darkgray self-start">Женёк</p>
+                                <p class="text-xl mt-4">Я решил Том ям заказать. Острого охота сегодня</p>
+                            </div>
+                            <div class="swiper-slide w-3/4 bg-chat-4 rounded-3xl p-8 mt-32 self-center flex flex-col items-start">
+                                <p class="text-xs text-darkgray self-start">Саня маркетолог</p>
+                                <p class="text-xl mt-4">На корпоратив закажем роллов</p>
+                            </div>
+                            <div class="swiper-slide w-3/4 bg-chat-5 rounded-3xl p-8 mt-32 self-end flex flex-col items-start">
+                                <p class="text-xs text-darkgray self-start">Максим с качалки</p>
+                                <p class="text-xl mt-4">Хочу мега огромный сет!!!</p>
+                            </div>
+                            <div class="swiper-slide w-3/4 bg-chat-1 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
+                                <p class="text-xs text-darkgray self-start">Настя с работы</p>
+                                <p class="text-xl mt-4">Закажи роллов. Досмотрим последнюю серию</p>
+                            </div>
+                            <div class="swiper-slide w-3/4 bg-chat-2 rounded-3xl p-10 mt-36 self-start flex flex-col items-start">
+                                <p class="text-xs text-darkgray self-start">ЛП</p>
+                                <p class="text-xl mt-4">Заказала тех самых которые нам понравились</p>
+                            </div>
+                            <div class="swiper-slide w-3/4 bg-chat-3 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
+                                <p class="text-xs text-darkgray self-start">Женёк</p>
+                                <p class="text-xl mt-4">Я решил Том ям заказать. Острого охота сегодня</p>
+                            </div>
+                            <div class="swiper-slide w-3/4 bg-chat-4 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
+                                <p class="text-xs text-darkgray self-start">Саня маркетолог</p>
+                                <p class="text-xl mt-4">На корпоратив закажем роллов</p>
+                            </div>
+                            <div class="swiper-slide w-3/4 bg-chat-5 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
+                                <p class="text-xs text-darkgray self-start">Максим с качалки</p>
+                                <p class="text-xl mt-4">Хочу мега огромный сет!!!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="basis-1/2">
-                2
             </div>
-        </div>
+            <!-- <div id="promotions" class="absolute w-screen self-center top-10 left-32"> -->
+                <div id="promotions" class="w-full mx-auto absolute top-0 left-0 overflow-hidden mt-[6rem] ">
+                    <div class="swiper-wrapper backdrop-blur-sm flex items-center">
+                    <!-- bg-promotion-background -->
+                            
+                            <img src="{{ asset('assets/images/placeholders/promotion.png') }}" class="swiper-slide mx-2 rounded-3xl max-w-[29%]" alt="">
+                            <img src="{{ asset('assets/images/placeholders/promotion.png') }}" class="swiper-slide mx-2 rounded-3xl max-w-[29%]" alt="">
+                            <img src="{{ asset('assets/images/placeholders/promotion.png') }}" class="swiper-slide mx-2 rounded-3xl max-w-[29%]" alt="">
+                            <img src="{{ asset('assets/images/placeholders/promotion.png') }}" class="swiper-slide mx-2 rounded-3xl max-w-[29%]" alt="">
+                            <img src="{{ asset('assets/images/placeholders/promotion.png') }}" class="swiper-slide mx-2 rounded-3xl max-w-[29%]" alt="">
+                            <img src="{{ asset('assets/images/placeholders/promotion.png') }}" class="swiper-slide mx-2 rounded-3xl max-w-[29%]" alt="">
+                      
+                            <div class="swiper-button-next z-50"></div>
+                            <div class="swiper-button-prev z-50"></div>
+                    </div>  
+
+                </div>
+        
     </div>
+    
 
     <div class="sticky top-0 backdrop-blur-sm">
     <swiper-container class=" flex flex-row mb-10 space-x-3 scrollbar-hide" slides-per-view="6" spaceBetween="20" speed="200" loop="false" centeredSlides="false" allowSlideNext="true">

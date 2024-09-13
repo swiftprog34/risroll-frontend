@@ -10,6 +10,24 @@
     margin: 0 auto !important;
 }
 
+#promotions .swiper-slide-active {
+ 
+        /* transition: all 0.5s ease-out!important; */
+        transition: 150ms linear 50ms!important;
+    
+}
+
+#promotions .swiper-slide-prev, #promotions .swiper-slide-next, #promotions .swiper-slide:not(.swiper-slide-active) {
+    /* padding: 2.5rem !important;  */
+    max-width: 20%;
+    transition: 250ms linear 50ms!important;
+}
+
+/* #promotions .swiper-slide-prev {
+    margin-left: 6rem !important;
+} */
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
