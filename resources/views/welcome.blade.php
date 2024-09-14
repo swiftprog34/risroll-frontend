@@ -336,7 +336,7 @@
 
     <div id="bottom" class="fixed bottom-0 z-10 bg-transparent mx-auto inset-x-0 container">       
         <div class="flex justify-between ">
-            <button type="button" class="inline-flex flex-col items-center justify-center px-5 backdrop-blur-sm rounded-3xl">
+            <button type="button" class="inline-flex flex-col items-center justify-center px-5 backdrop-blur-sm rounded-3xl" onclick="Livewire.dispatch('cart-opened', { id: id })">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.3333 18.667H50.6667V50.667C50.6667 53.6126 48.2789 56.0003 45.3333 56.0003H18.6667C15.7211 56.0003 13.3333 53.6126 13.3333 50.667V18.667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M46.1429 18L17.8571 18H14L50 18H46.1429Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -452,6 +452,6 @@
     <livewire:user.wishlist>
     <livewire:user.main-profile>
     <livewire:user.profile>
-    
+    <livewire:user.cart>
 </body>
 </html>
