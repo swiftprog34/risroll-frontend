@@ -13,7 +13,7 @@
 </head>     
 <body class="relative">
     
-    <div class="">
+    <div class="w-full h-screen">
         <div id="header" class="container mx-auto px-4 flex flex-row py-6 items-center justify-between backdrop-blur-sm relative" >
             <img class="flex-none mr-12" src="{{ asset('assets/system/logo.png') }}" alt="Рис ролл">
             <button class="flex flex-row items-center flex-initial w-64">
@@ -37,7 +37,7 @@
         <livewire:navigation-menu>
 
         <div id="promo" class="container mx-auto px-4 relative">
-            <div class="flex flex-row h-screen space-x-8">
+            <div class="flex flex-row space-x-8">
                 <div class="basis-1/2">
                     <div id="chat-feed" >
                         <div class="swiper-wrapper -z-10 flex flex-col max-h-96" 
@@ -65,7 +65,7 @@
                                 <p class="text-xs text-darkgray self-start">Максим с качалки</p>
                                 <p class="text-xl mt-4">Хочу мега огромный сет!!!</p>
                             </div>
-                            <div class="swiper-slide w-3/4 bg-chat-1 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
+                            <!-- <div class="swiper-slide w-3/4 bg-chat-1 rounded-3xl p-10 mt-36 self-center flex flex-col items-start">
                                 <p class="text-xs text-darkgray self-start">Настя с работы</p>
                                 <p class="text-xl mt-4">Закажи роллов. Досмотрим последнюю серию</p>
                             </div>
@@ -84,7 +84,7 @@
                             <div class="swiper-slide w-3/4 bg-chat-5 rounded-3xl p-10 mt-36 self-end flex flex-col items-start">
                                 <p class="text-xs text-darkgray self-start">Максим с качалки</p>
                                 <p class="text-xl mt-4">Хочу мега огромный сет!!!</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -102,8 +102,9 @@
                             <img src="{{ asset('assets/images/placeholders/promotion.png') }}" class="swiper-slide mx-2 rounded-3xl max-w-[29%]" alt="">
                             <img src="{{ asset('assets/images/placeholders/promotion.png') }}" class="swiper-slide mx-2 rounded-3xl max-w-[29%]" alt="">
                       
-                            <div class="swiper-button-next z-50"></div>
-                            <div class="swiper-button-prev z-50"></div>
+                            
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                     </div>  
 
                 </div>
@@ -214,7 +215,7 @@
     </swiper-container>
     </div>
 
-    <div id="catalog" class = "container mx-auto">
+    <div id="catalog" class = "container mx-auto bg-white">
         <div id="category-sety">
             <h2 class="mt-10 text-start text-lg">Сеты</h2>
             <div class=" grid grid-cols-5 gap-4">

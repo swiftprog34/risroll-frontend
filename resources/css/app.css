@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800;900&display=swap');
 @import 'swiper/css/bundle';
+
 @import '../css/swiper-custom.css';
 
 /* override swipers transition */
