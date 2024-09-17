@@ -1,7 +1,6 @@
 import './bootstrap';
 
 import Swiper from 'swiper/bundle';
-import Fullpage from 'fullpage.js';
 
 class GradientAnimation {
   constructor(element, minRadius, maxRadius, speed, count) {

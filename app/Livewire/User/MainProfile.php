@@ -7,7 +7,7 @@ use Livewire\Attributes\On;
 
 class MainProfile extends Component
 {
-    public $showMainProfile = false;
+    public $showMainProfile = true;
 
     #[On('main-profile-opened')]
     public function show()

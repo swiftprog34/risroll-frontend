@@ -115,13 +115,13 @@
 
                 <div class="mt-6">
                     <div class="flex items-center mb-4">
-                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-gradient-purple bg-gray-100 border-gray-300 focus:ring-gradient-purple dark:focus:ring-gradient-purple dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="default-radio-1" class="ms-2 text-sm ">Ближайшее</label>
+                        <input id="delivery-time-1" type="radio" value="" name="delivery-time" class="w-4 h-4 text-gradient-purple bg-gray-100 border-gray-300 focus:ring-gradient-purple dark:focus:ring-gradient-purple dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="delivery-time-1" class="ms-2 text-sm ">Ближайшее</label>
                     </div>
                     <div class="flex justify-between">
                         <div class="flex items-center">
-                            <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-gradient-purple bg-gray-100 border-gray-300 focus:ring-gradient-purple dark:focus:ring-gradient-purple dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="default-radio-2" class="ms-2 text-sm ">Ко времени сегодня</label>
+                            <input checked id="delivery-time-2" type="radio" value="" name="delivery-time" class="w-4 h-4 text-gradient-purple bg-gray-100 border-gray-300 focus:ring-gradient-purple dark:focus:ring-gradient-purple dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="delivery-time-2" class="ms-2 text-sm ">Ко времени сегодня</label>
                         </div>
 
                         <a href="">
@@ -141,15 +141,35 @@
 
                 <div class="mt-6">
                     <div class="flex items-center mb-4">
-                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-gradient-purple bg-gray-100 border-gray-300 focus:ring-gradient-purple dark:focus:ring-gradient-purple dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="default-radio-1" class="ms-2 text-xl ">Картой при получении</label>
+                        <input wire:click="hidePaymentTypeCash" checked id="payment-type-1" type="radio" value="" name="payment-type" class="w-4 h-4 text-gradient-purple bg-gray-100 border-gray-300 focus:ring-gradient-purple dark:focus:ring-gradient-purple dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="payment-type-1" class="ms-2 text-xl ">Картой при получении</label>
                     </div>
                     <div class="flex justify-between">
                         <div class="flex items-center">
-                            <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-gradient-purple bg-gray-100 border-gray-300 focus:ring-gradient-purple dark:focus:ring-gradient-purple dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="default-radio-2" class="ms-2 text-xl ">Наличными</label>
+                            <input wire:click="showPaymentTypeCash"  id="payment-type-2" type="radio" value="" name="payment-type" class="w-4 h-4 text-gradient-purple bg-gray-100 border-gray-300 focus:ring-gradient-purple dark:focus:ring-gradient-purple dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="payment-type-2" class="ms-2 text-xl ">Наличными</label>
                         </div>
                     </div>
+
+                    @if($paymentTypeOpenedCash)
+                    <div class="grid grid-cols-2 gap-4 mt-10 px-16">
+                            <button class="bg-white px-3 py-1 rounded-xl shadow-button-shadow mt-1 mb-4 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+                                Без сдачи
+                            </button>
+                            <button class="bg-white px-3 py-1  rounded-xl shadow-button-shadow mt-1 mb-4 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+                                С 500 ₽
+                            </button>
+                            <button class="bg-white px-3 py-1  rounded-xl shadow-button-shadow mt-1 mb-4 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+                                С 1000 ₽
+                            </button>
+                            <button class="bg-white px-3 py-1 rounded-xl shadow-button-shadow mt-1 mb-4 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+                                С 2000 ₽
+                            </button>
+                            <button class="bg-white px-3 py-1  rounded-xl shadow-button-shadow mt-1 mb-4 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+                                С 5000 ₽
+                            </button>
+                    </div>
+                    @endif
                     
                 </div>
             </div>

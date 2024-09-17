@@ -15,6 +15,11 @@ class Profile extends Component
         $this->showProfile = true;
     }
 
+    public function closeProfile()
+    {
+        $this->showProfile = false;
+    }
+
     public function render()
     {
         return view('livewire.user.profile');

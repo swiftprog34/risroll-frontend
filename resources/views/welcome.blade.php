@@ -452,6 +452,7 @@
     <livewire:user.wishlist>
     <livewire:user.main-profile>
     <livewire:user.profile>
+    <livewire:user.recent-orders>
     <livewire:user.cart>
 </body>
 </html>
